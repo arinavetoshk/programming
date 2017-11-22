@@ -1,4 +1,6 @@
-fname = "C:\\Users\\Арина\\Desktop\\text.txt"
+#Арина Ветошкина
+#Вариант 2
+fname = "text.txt"
 with open(fname, encoding="utf-8") as f:
     alist = [line.rstrip() for line in f]
 len_str1 =  len(max(alist,key = len).split())
