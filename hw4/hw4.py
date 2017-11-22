@@ -1,3 +1,5 @@
+#Арина Ветошкина
+#Вариант 2
 fname = "C:\\Users\\Арина\\Desktop\\text.txt"
 with open(fname, encoding="utf-8") as f:
     alist = [line.rstrip() for line in f]
