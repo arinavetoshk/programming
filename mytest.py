@@ -1,3 +1,5 @@
+#Вариант1
+#1
 fname = "C:\\Users\\Арина\\Desktop\\quotes.txt"
 ql = []
 with open(fname, encoding="utf-8") as f:
