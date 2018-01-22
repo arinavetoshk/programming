@@ -1,0 +1,103 @@
+>>> d = {}
+>>> d
+{}
+>>> d = {'cat':'Cacl', 'dog': 'Dog'}
+>>> d
+{'dog': 'Dog', 'cat': 'Cacl'}
+>>> addr = {'Vasya':{'name': 'Vasiliy', 'age':20}, 'Peter':{'name': 'P', 'addr': ['Krasnaya pl.', 'dom 1']}}
+>>> addr
+{'Vasya': {'age': 20, 'name': 'Vasiliy'}, 'Peter': {'addr': ['Krasnaya pl.', 'dom 1'], 'name': 'P'}}
+>>> type(addr)
+<class 'dict'>
+>>> addr['Vasya']
+{'age': 20, 'name': 'Vasiliy'}
+>>> 'Anna' in addr
+False
+>>> if 'Anna' in addr
+SyntaxError: invalid syntax
+>>> if 'Vasya' in addr:
+	print('info:', addr['Vasya'])
+
+	
+info: {'age': 20, 'name': 'Vasiliy'}
+>>> if 'dog' in d:
+	print(d['dog'].upper())
+
+	
+DOG
+>>> 
+>>> d ['parrot'] = 'Karr'
+>>> d
+{'parrot': 'Karr', 'dog': 'Dog', 'cat': 'Cacl'}
+>>> addr['Vasya']['age']
+20
+>>> for animal in d:
+	print(animal, '->', d[animal])
+
+	
+parrot -> Karr
+dog -> Dog
+cat -> Cacl
+>>> for person in addr:
+	print(person, '->', addr[person]['name'])
+
+	
+Vasya -> Vasiliy
+Peter -> P
+>>> if  person in addr:
+	print(person, '->', addr[peson]['addr'])
+	else:
+		
+SyntaxError: invalid syntax
+>>> if  person in addr:
+	print(person, '->', addr[peson]['addr'])
+    else:
+	    
+SyntaxError: unindent does not match any outer indentation level
+>>> if  person in addr:
+	print(person, '->', addr[peson]['addr'])
+    else: print('sorry')
+    
+SyntaxError: unindent does not match any outer indentation level
+>>> if  person in addr:
+	print(person, '->', addr[peson]['addr'])
+    else: print('sorry')
+    
+SyntaxError: unindent does not match any outer indentation level
+>>> for  person in addr:
+	if person in addr:
+		print(person, '->', addr[peson]['addr'])
+	else:
+		print('sorry')
+
+		
+Traceback (most recent call last):
+  File "<pyshell#35>", line 3, in <module>
+    print(person, '->', addr[peson]['addr'])
+NameError: name 'peson' is not defined
+>>> addr = {'Vasya':{'name': 'Vasiliy', 'age':20}, 'Peter':{'name': 'P', 'addr': ['Krasnaya pl.', 'dom 1']}}
+>>> addr
+{'Peter': {'name': 'P', 'addr': ['Krasnaya pl.', 'dom 1']}, 'Vasya': {'age': 20, 'name': 'Vasiliy'}}
+>>> addr.keys()
+dict_keys(['Peter', 'Vasya'])
+>>> len(addr.keys())
+2
+>>> list(addr.keys())
+['Peter', 'Vasya']
+>>> addr.values()
+dict_values([{'name': 'P', 'addr': ['Krasnaya pl.', 'dom 1']}, {'age': 20, 'name': 'Vasiliy'}])
+>>> list(addr.values())
+[{'name': 'P', 'addr': ['Krasnaya pl.', 'dom 1']}, {'age': 20, 'name': 'Vasiliy'}]
+>>> numerical = {1:'first', 2:'second'}
+>>> numerical = {1:'first', 2:'second', 1:'third')
+SyntaxError: invalid syntax
+>>> numerical = {1:'first', 2:'second', 1:'third'}
+>>> numerical
+{1: 'third', 2: 'second'}
+>>> numerical[1] = 'first!'
+>>> numerical
+{1: 'first!', 2: 'second'}
+>>> numerical[2] = 'first!'
+>>> numerical
+{1: 'first!', 2: 'first!'}
+>>> 
