@@ -1,3 +1,4 @@
+#вариант2 трехстопный дактиль
 import random
 def get_text(file_name):
     with open (file_name, encoding = 'utf-8') as file:
