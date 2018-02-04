@@ -1,11 +1,13 @@
-'''
-сколько в тексте разных существительных с суффиксом -ness
-и какое существительное из них имеет максимальную частотность.
-'''
+
+#Вариант 2
+#Ветошкина Арина
+
 def inputfile():
     file_name = input("Введите имя файла:")
     return file_name
+
 def textwords(file_name):
+    '''читаем файл и разбиваем его на слова'''
     with open (file_name, encoding = 'utf-8') as file:
         text = file.read()
         words = text.split()
@@ -34,7 +36,7 @@ def freq(dic):
     '''ищем сумму слов в словаре'''
     import collections
     counter = collections.Counter(dic)
-    wordcount = sum(counter.values())
+    wordcount = len(list(counter))
     return wordcount
 
 def themostfreq(dic):
@@ -47,7 +49,6 @@ def themostfreq(dic):
 def main():
     file_name = inputfile()
     maintext = textwords(file_name)
-    #maintext = textwords("Pride_and_Prejudice.txt")
     wolist = wordlist(maintext)
     diction = dictionary(wolist)
     wordfreq = freq(diction)
