@@ -33,7 +33,7 @@ def dictionary(wlist):
     return dic
 
 def freq(dic):
-    '''ищем сумму слов в словаре'''
+    '''ищем сумму уникальных слов с ness в словаре'''
     import collections
     counter = collections.Counter(dic)
     wordcount = len(list(counter))
