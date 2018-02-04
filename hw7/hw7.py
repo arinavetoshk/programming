@@ -52,7 +52,7 @@ def main():
     wolist = wordlist(maintext)
     diction = dictionary(wolist)
     wordfreq = freq(diction)
-    print('Количество слов с -ness:', wordfreq)
+    print('Количество уникальных слов с -ness:', wordfreq)
     mostfreq = themostfreq(diction)
     print("Самое частотное слово:", mostfreq)
 
